@@ -1,5 +1,27 @@
 {
+  "name": "study-nodejs",
+  "version": "1.0.0",
+  "description": "This is a demo for Node js",
+  "main": "npmModule.js",
+  "scripts": {
+    "test": "node npmModule.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohamedtamer0/Study-NodeJs.git"
+  },
+  "keywords": [
+    "Nodejs",
+    "studyNodeJs"
+  ],
+  "author": "mohamed tamer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohamedtamer0/Study-NodeJs/issues"
+  },
+  "homepage": "https://github.com/mohamedtamer0/Study-NodeJs#readme",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "validator": "^13.7.0"
   }
 }
