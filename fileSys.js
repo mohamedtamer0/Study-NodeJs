@@ -1,4 +1,5 @@
 const fsys = require("fs");
+const { finished } = require("stream");
 console.log("Start reading...");
 var data = fsys.readFileSync("read.txt");
 console.log("Data: " + data);
@@ -11,3 +12,9 @@ fsys.readFile("read.txt",(err,d)=>{
     console.log("Data: " + d)
 });
 console.log("After read async");
+//Write in file
+let dataToWrite = " Hello file";
+fsys.writeFile("write.txt", dataToWrite, ()=> {
+    console.log("Data write finished");
+});
+console.log("After write async")
