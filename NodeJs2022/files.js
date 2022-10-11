@@ -20,7 +20,22 @@ fs.writeFile('./docs/blog2.txt', 'hello, again', () => {
 
 //directories
 
-
+if (!fs.existsSync('./assets')) {
+    fs.mkdir('./assets', (err) => {
+        if (err) {
+            console.log(err);
+        }
+        console.log('folder created')
+    })
+}
 
 
 //deleting files
+if (fs.existsSync('./docs/deleteme.txt')) {
+    fs.unlink('./docs/deleteme.txt', (err) => {
+        if (err) {
+            console.log(err)
+        }
+        console.log('file deleted');
+    })
+}
